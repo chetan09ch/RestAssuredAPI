@@ -12,14 +12,14 @@ public class RestUtils {
 
 	public static String empSal()
 	{
-		String generatedString = RandomStringUtils.randomNumeric(5);
-		return ("Sami"+generatedString);
+		String generatedNumericSalary = RandomStringUtils.randomNumeric(5);
+		return (generatedNumericSalary);
 	}
 	
 	public static String empAge()
 	{
-		String generatedString = RandomStringUtils.randomAlphabetic(2);
-		return ("Sami"+generatedString);
+		String generatedNumericAge = RandomStringUtils.randomNumeric(2);
+		return (generatedNumericAge);
 	}
 
 

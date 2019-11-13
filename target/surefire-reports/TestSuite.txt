@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 38, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 32.526 s <<< FAILURE! - in TestSuite
+checkServerType(com.employeeapi.testcases.TC001_GET_All_Employees)  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: expected [Apache] but found [nginx/1.16.0]
+	at com.employeeapi.testcases.TC001_GET_All_Employees.checkServerType(TC001_GET_All_Employees.java:89)
+
+checkServerType(com.employeeapi.testcases.TC003_POST_Employee_Record)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [Apache] but found [nginx/1.16.0]
+	at com.employeeapi.testcases.TC003_POST_Employee_Record.checkServerType(TC003_POST_Employee_Record.java:105)
+
+checkServerType(com.employeeapi.testcases.TC004_PUT_Employee_Record)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [Apache] but found [nginx/1.16.0]
+	at com.employeeapi.testcases.TC004_PUT_Employee_Record.checkServerType(TC004_PUT_Employee_Record.java:104)
+

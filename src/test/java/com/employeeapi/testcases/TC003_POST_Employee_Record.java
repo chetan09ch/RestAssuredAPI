@@ -52,7 +52,7 @@ public class TC003_POST_Employee_Record extends TestBase {
 	{
 		logger.info("************** Checking Response Body *****************");
 		String responseBody = response.getBody().asString(); // Getting Response Body
-		//logger.info("Response Body==>" + responseBody);
+	    logger.info("Response Body==>" + responseBody);
 		//Assert.assertTrue(responseBody!=null);
 		Assert.assertEquals(responseBody.contains(empName),true);
 		Assert.assertEquals(responseBody.contains(empSal),true);
@@ -102,7 +102,7 @@ public class TC003_POST_Employee_Record extends TestBase {
 		logger.info("************** Checking Server Type *****************");
 		String serverType = response.header("server"); // Checking Server Type
 		logger.info("Server Type is ==>" + serverType);
-		Assert.assertEquals(serverType, "Apache");	
+		Assert.assertEquals(serverType, "nginx/1.16.0");	
 	}
 	
 	

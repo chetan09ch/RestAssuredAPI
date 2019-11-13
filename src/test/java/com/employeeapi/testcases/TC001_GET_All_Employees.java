@@ -86,7 +86,7 @@ public class TC001_GET_All_Employees extends TestBase {
 		logger.info("************** Checking Server Type *****************");
 		String serverType = response.header("server"); // Checking Server Type
 		logger.info("Server Type is ==>" + serverType);
-		Assert.assertEquals(serverType, "Apache");	
+		Assert.assertEquals(serverType, "nginx/1.16.0");	
 	}
 	
 	@Test

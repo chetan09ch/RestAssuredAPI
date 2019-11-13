@@ -32,7 +32,7 @@ public class TC005_DELETE_Employee_Record extends TestBase {
 		JsonPath jsonPathEvaluator = response.jsonPath();
 		
 		//Capture ID
-		String empID = jsonPathEvaluator.get("[0].id");
+		//String empID = jsonPathEvaluator.get("[0].id");
 		response = httpRequest.request(Method.DELETE,"/delete/"+empID);// Update the existing employee		
 		
 		Thread.sleep(5000);
@@ -90,7 +90,7 @@ public class TC005_DELETE_Employee_Record extends TestBase {
 		logger.info("************** Checking Server Type *****************");
 		String serverType = response.header("server"); // Checking Server Type
 		logger.info("Server Type is ==>" + serverType);
-		Assert.assertEquals(serverType, "Apache");	
+		Assert.assertEquals(serverType, "nginx/1.16.0");	
 	}
 	
 	@Test

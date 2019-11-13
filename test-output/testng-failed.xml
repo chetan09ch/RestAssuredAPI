@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [EmployeeRestAPISuite]">
-  <listeners>
-    <listener class-name="com.employeeapi.utilities.Reporting"/>
-  </listeners>
-  <test thread-count="5" name="EmployeeRestAPITest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.employeeapi.testcases.TC004_PUT_Employee_Record">
         <methods>
           <include name="tearDown"/>
-          <include name="checkResponseBody"/>
+          <include name="checkServerType"/>
           <include name="setup"/>
           <include name="getEmployeeData"/>
         </methods>
       </class> <!-- com.employeeapi.testcases.TC004_PUT_Employee_Record -->
     </classes>
-  </test> <!-- EmployeeRestAPITest(failed) -->
-</suite> <!-- Failed suite [EmployeeRestAPISuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

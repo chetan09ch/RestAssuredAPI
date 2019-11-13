@@ -14,6 +14,14 @@
           <include name="getEmployeeData"/>
         </methods>
       </class> <!-- com.employeeapi.testcases.TC004_PUT_Employee_Record -->
+      <class name="com.employeeapi.testcases.TC003_POST_Employee_Record">
+        <methods>
+          <include name="getEmployeeData"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC003_POST_Employee_Record -->
     </classes>
   </test> <!-- EmployeeRestAPITest(failed) -->
 </suite> <!-- Failed suite [EmployeeRestAPISuite] -->
