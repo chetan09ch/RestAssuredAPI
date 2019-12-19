@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7676" started-at="2019-11-12T11:52:47Z" finished-at="2019-11-12T11:52:54Z">
+  <suite name="Default suite" duration-ms="7637" started-at="2019-12-19T09:55:53Z" finished-at="2019-12-19T09:56:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7676" started-at="2019-11-12T11:52:47Z" finished-at="2019-11-12T11:52:54Z">
-      <class name="com.employeeapi.testcases.TC005_DELETE_Employee_Record">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="setup" is-config="true" duration-ms="61" started-at="2019-11-12T11:52:47Z" finished-at="2019-11-12T11:52:47Z">
+    <test name="Default test" duration-ms="7637" started-at="2019-12-19T09:55:53Z" finished-at="2019-12-19T09:56:00Z">
+      <class name="com.employeeapi.testcases.TC003_POST_Employee_Record">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="setup" is-config="true" duration-ms="58" started-at="2019-12-19T09:55:53Z" finished-at="2019-12-19T09:55:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getEmployeeData()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="getEmployeeData" is-config="true" duration-ms="7547" started-at="2019-11-12T11:52:47Z" finished-at="2019-11-12T11:52:54Z">
+        <test-method status="PASS" signature="getEmployeeData()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="getEmployeeData" is-config="true" duration-ms="7522" started-at="2019-12-19T09:55:53Z" finished-at="2019-12-19T09:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEmployeeData -->
-        <test-method status="PASS" signature="checkContentLength()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="checkContentLength" duration-ms="11" started-at="2019-11-12T11:52:54Z" finished-at="2019-11-12T11:52:54Z">
+        <test-method status="PASS" signature="checkContentLength()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="checkContentLength" duration-ms="6" started-at="2019-12-19T09:56:00Z" finished-at="2019-12-19T09:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkContentLength -->
-        <test-method status="PASS" signature="checkContentType()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="checkContentType" duration-ms="3" started-at="2019-11-12T11:52:54Z" finished-at="2019-11-12T11:52:54Z">
+        <test-method status="PASS" signature="checkContentType()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="checkContentType" duration-ms="2" started-at="2019-12-19T09:56:00Z" finished-at="2019-12-19T09:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkContentType -->
-        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="checkResponseBody" duration-ms="3" started-at="2019-11-12T11:52:54Z" finished-at="2019-11-12T11:52:54Z">
+        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="checkResponseBody" duration-ms="10" started-at="2019-12-19T09:56:00Z" finished-at="2019-12-19T09:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResponseBody -->
-        <test-method status="PASS" signature="checkResponseTime()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="checkResponseTime" duration-ms="2" started-at="2019-11-12T11:52:54Z" finished-at="2019-11-12T11:52:54Z">
+        <test-method status="PASS" signature="checkResponseTime()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="checkResponseTime" duration-ms="2" started-at="2019-12-19T09:56:00Z" finished-at="2019-12-19T09:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResponseTime -->
-        <test-method status="PASS" signature="checkServerType()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="checkServerType" duration-ms="3" started-at="2019-11-12T11:52:54Z" finished-at="2019-11-12T11:52:54Z">
+        <test-method status="PASS" signature="checkServerType()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="checkServerType" duration-ms="2" started-at="2019-12-19T09:56:00Z" finished-at="2019-12-19T09:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkServerType -->
-        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="checkStatusCode" duration-ms="3" started-at="2019-11-12T11:52:54Z" finished-at="2019-11-12T11:52:54Z">
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="checkStatusCode" duration-ms="2" started-at="2019-12-19T09:56:00Z" finished-at="2019-12-19T09:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusCode -->
-        <test-method status="PASS" signature="checkStatusLine()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="checkStatusLine" duration-ms="1" started-at="2019-11-12T11:52:54Z" finished-at="2019-11-12T11:52:54Z">
+        <test-method status="PASS" signature="checkStatusLine()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="checkStatusLine" duration-ms="2" started-at="2019-12-19T09:56:00Z" finished-at="2019-12-19T09:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusLine -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.employeeapi.testcases.TC005_DELETE_Employee_Record@91161c7]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-12T11:52:54Z" finished-at="2019-11-12T11:52:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.employeeapi.testcases.TC003_POST_Employee_Record@5c3bd550]" name="tearDown" is-config="true" duration-ms="2" started-at="2019-12-19T09:56:00Z" finished-at="2019-12-19T09:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.employeeapi.testcases.TC005_DELETE_Employee_Record -->
+      </class> <!-- com.employeeapi.testcases.TC003_POST_Employee_Record -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
