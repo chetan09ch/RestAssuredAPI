@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.employeeapi.testcases.TC001_GET_All_Employees">
+      <class name="com.employeeapi.testcases.TC003_POST_Employee_Record">
         <methods>
+          <include name="checkContentType"/>
+          <include name="getEmployeeData"/>
           <include name="setup"/>
-          <include name="getAllEmployees"/>
-          <include name="checkContentLength"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.employeeapi.testcases.TC001_GET_All_Employees -->
+      </class> <!-- com.employeeapi.testcases.TC003_POST_Employee_Record -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

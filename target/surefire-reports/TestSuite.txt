@@ -1,12 +1,48 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 38, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 32.723 s <<< FAILURE! - in TestSuite
-checkContentLength(com.employeeapi.testcases.TC001_GET_All_Employees)  Time elapsed: 0.01 s  <<< FAILURE!
-java.lang.NumberFormatException: null
-	at com.employeeapi.testcases.TC001_GET_All_Employees.checkContentLength(TC001_GET_All_Employees.java:110)
+Tests run: 38, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 33.128 s <<< FAILURE! - in TestSuite
+checkContentType(com.employeeapi.testcases.TC001_GET_All_Employees)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at com.employeeapi.testcases.TC001_GET_All_Employees.checkContentType(TC001_GET_All_Employees.java:80)
 
-checkResponseBody(com.employeeapi.testcases.TC002_GET_Single_Employee_Record)  Time elapsed: 0.002 s  <<< FAILURE!
+ContentEncoding(com.employeeapi.testcases.TC002_GET_Single_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [gzip] but found [null]
+	at com.employeeapi.testcases.TC002_GET_Single_Employee_Record.ContentEncoding(TC002_GET_Single_Employee_Record.java:87)
+
+checkContentType(com.employeeapi.testcases.TC002_GET_Single_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at com.employeeapi.testcases.TC002_GET_Single_Employee_Record.checkContentType(TC002_GET_Single_Employee_Record.java:69)
+
+checkResponseBody(com.employeeapi.testcases.TC002_GET_Single_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at com.employeeapi.testcases.TC002_GET_Single_Employee_Record.checkResponseBody(TC002_GET_Single_Employee_Record.java:32)
+
+checkStatusCode(com.employeeapi.testcases.TC002_GET_Single_Employee_Record)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.employeeapi.testcases.TC002_GET_Single_Employee_Record.checkStatusCode(TC002_GET_Single_Employee_Record.java:41)
+
+checkStatusLine(com.employeeapi.testcases.TC002_GET_Single_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 400 Bad Request]
+	at com.employeeapi.testcases.TC002_GET_Single_Employee_Record.checkStatusLine(TC002_GET_Single_Employee_Record.java:60)
+
+checkContentType(com.employeeapi.testcases.TC003_POST_Employee_Record)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at com.employeeapi.testcases.TC003_POST_Employee_Record.checkContentType(TC003_POST_Employee_Record.java:96)
+
+checkContentType(com.employeeapi.testcases.TC004_PUT_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at com.employeeapi.testcases.TC004_PUT_Employee_Record.checkContentType(TC004_PUT_Employee_Record.java:95)
+
+checkResponseBody(com.employeeapi.testcases.TC004_PUT_Employee_Record)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testcases.TC004_PUT_Employee_Record.checkResponseBody(TC004_PUT_Employee_Record.java:56)
+
+checkContentType(com.employeeapi.testcases.TC005_DELETE_Employee_Record)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at com.employeeapi.testcases.TC005_DELETE_Employee_Record.checkContentType(TC005_DELETE_Employee_Record.java:84)
+
+checkResponseBody(com.employeeapi.testcases.TC005_DELETE_Employee_Record)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testcases.TC005_DELETE_Employee_Record.checkResponseBody(TC005_DELETE_Employee_Record.java:46)
 

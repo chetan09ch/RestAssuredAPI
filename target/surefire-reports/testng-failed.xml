@@ -6,22 +6,52 @@
   </listeners>
   <test thread-count="5" verbose="0" name="EmployeeRestAPITest(failed)">
     <classes>
-      <class name="com.employeeapi.testcases.TC002_GET_Single_Employee_Record">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="checkResponseBody"/>
-          <include name="getEmployeeData"/>
-        </methods>
-      </class> <!-- com.employeeapi.testcases.TC002_GET_Single_Employee_Record -->
       <class name="com.employeeapi.testcases.TC001_GET_All_Employees">
         <methods>
           <include name="setup"/>
           <include name="getAllEmployees"/>
-          <include name="checkContentLength"/>
           <include name="tearDown"/>
+          <include name="checkContentType"/>
         </methods>
       </class> <!-- com.employeeapi.testcases.TC001_GET_All_Employees -->
+      <class name="com.employeeapi.testcases.TC003_POST_Employee_Record">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="getEmployeeData"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC003_POST_Employee_Record -->
+      <class name="com.employeeapi.testcases.TC005_DELETE_Employee_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+          <include name="checkContentType"/>
+          <include name="getEmployeeData"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC005_DELETE_Employee_Record -->
+      <class name="com.employeeapi.testcases.TC002_GET_Single_Employee_Record">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="checkStatusCode"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="ContentEncoding"/>
+          <include name="checkStatusLine"/>
+          <include name="getEmployeeData"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC002_GET_Single_Employee_Record -->
+      <class name="com.employeeapi.testcases.TC004_PUT_Employee_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+          <include name="getEmployeeData"/>
+          <include name="checkContentType"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC004_PUT_Employee_Record -->
     </classes>
   </test> <!-- EmployeeRestAPITest(failed) -->
 </suite> <!-- Failed suite [EmployeeRestAPISuite] -->
